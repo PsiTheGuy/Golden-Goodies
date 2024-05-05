@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "psis-golden-goodies",
+	"id": "golden-goodies",
 	"version": "${version}",
-	"name": "PsiTheGuy's Golden Goodies",
+	"name": "Golden Goodies",
 	"description": "A lightweight Fabric mod that adds and modifies recipes in Minecraft",
 	"authors": [
 		"PsiTheGuy"
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/psis-golden-goodies/icon.png",
+	"icon": "assets/golden-goodies/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -27,13 +27,14 @@
 		]
 	},
 	"mixins": [
-		"psis-golden-goodies.mixins.json"
+      "golden-goodies.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabric-resource-loader-v0": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
